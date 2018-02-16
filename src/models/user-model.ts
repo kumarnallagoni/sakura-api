@@ -1,4 +1,4 @@
-import {IDbGetParams, IFromDbOptions, Model, SakuraApi, SapiModelMixin} from '@sakuraapi/core';
+import {Db, IDbGetParams, IFromDbOptions, Json, Model, SakuraApi, SapiModelMixin} from '@sakuraapi/core';
 import {
   Collection,
   CollectionInsertOneOptions,
@@ -37,10 +37,10 @@ export class UserModel extends SapiModelMixin() {
   email: string;
 
   @Db({field: 'firstname'}) @Json()
-  firstName: string;
+  firstname: string;
 
   @Db({field: 'lastname'}) @Json()
-  lastName: string;
+  lastname: string;
 
   @Db({field: 'password'}) @Json()
   password: string;

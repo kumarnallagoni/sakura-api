@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.dbs = {
     user: {
-        collection: 'users',
+        collection: 'user',
         db: 'user'
     }
 };

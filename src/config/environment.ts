@@ -11,7 +11,7 @@ import {dbs} from './bootstrap/db';
  * *********************************************************************************************************************
  */
 const MONGO_DB_ADDRESS = process.env.MONGO_DB_ADDRESS || 'localhost';
-const MONGO_DB_PORT = process.env.MONGO_DB_PORT || '37001';
+const MONGO_DB_PORT = process.env.MONGO_DB_PORT || '27017';
 const MONGO_DB_CONN = process.env.MONGO_DB_CONN || null;
 const MONGO_DB_NAME = process.env.MONGO_DB_NAME || 'test';
 
@@ -35,7 +35,11 @@ module.exports = {
   /**
    * Database configurations for SakuraAPI
    */
-  dbConnections: [
+  dbConnections: [{
+    mongoClientOptions: {},
+    name: dbs.user.db,
+    url
+  }
   ],
   /**
    * Logging configuration for SakuraAPI

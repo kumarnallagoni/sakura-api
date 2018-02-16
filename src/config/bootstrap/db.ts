@@ -1,6 +1,6 @@
 export const dbs = {
   user: {
-    collection: 'users',
+    collection: 'user',
     db: 'user'
   }
 };

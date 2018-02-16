@@ -16,8 +16,8 @@ export declare class UserModel extends {
     toJsonString: (replacer?: () => any, space?: string | number) => string;
 } {
     email: string;
-    firstName: string;
-    lastName: string;
+    firstname: string;
+    lastname: string;
     password: string;
     phone: string;
 }

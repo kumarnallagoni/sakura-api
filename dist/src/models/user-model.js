@@ -19,23 +19,23 @@ const db_1 = require("../config/bootstrap/db");
 let UserModel = class UserModel extends core_1.SapiModelMixin() {
 };
 __decorate([
-    Db({ field: 'email' }), Json(),
+    core_1.Db({ field: 'email' }), core_1.Json(),
     __metadata("design:type", String)
 ], UserModel.prototype, "email", void 0);
 __decorate([
-    Db({ field: 'firstname' }), Json(),
+    core_1.Db({ field: 'firstname' }), core_1.Json(),
     __metadata("design:type", String)
-], UserModel.prototype, "firstName", void 0);
+], UserModel.prototype, "firstname", void 0);
 __decorate([
-    Db({ field: 'lastname' }), Json(),
+    core_1.Db({ field: 'lastname' }), core_1.Json(),
     __metadata("design:type", String)
-], UserModel.prototype, "lastName", void 0);
+], UserModel.prototype, "lastname", void 0);
 __decorate([
-    Db({ field: 'password' }), Json(),
+    core_1.Db({ field: 'password' }), core_1.Json(),
     __metadata("design:type", String)
 ], UserModel.prototype, "password", void 0);
 __decorate([
-    Db({ field: 'phone' }), Json(),
+    core_1.Db({ field: 'phone' }), core_1.Json(),
     __metadata("design:type", String)
 ], UserModel.prototype, "phone", void 0);
 UserModel = __decorate([
